@@ -98,3 +98,35 @@ form button:hover{
     transform: translateY(8rem) rotateZ(20deg);
     opacity: 0;
 }
+/* Custom Select */
+.filter-todo{
+    padding: 1rem;
+}
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  select {
+    color: #bd469d;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    width: 12rem;
+    border: none;
+  }
+  /* Arrow */
+  .select::after {
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    background: #bd469d;
+    cursor: pointer;
+    pointer-events: none;
+  }
+  
+  
+  
+ 

@@ -15,6 +15,12 @@ function addTodo(e){
     //todo DIV
     const todoDiv = document.createElement("div");
     todoDiv.classList.add("todo");
+
+    //empty list
+    if(todoInput.value.trim() === ""){
+        return;
+    }
+
     //create list
     const newTodo = document.createElement("li");
     newTodo.innerText = todoInput.value;
