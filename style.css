@@ -10,7 +10,7 @@
 
 }
 body{
-    background: linear-gradient(120deg, #5d64e2, #bd469d);
+    background: linear-gradient(120deg,#bd469d, #5d64e2 );
     color: white;
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
@@ -27,13 +27,20 @@ header,form{
     align-items: center;
 }
 form input,form button{
+    
     padding: 0.5rem;
     font-size: 1.3rem;
     border: none;
     background: white;
 
 }
+form input{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 form button{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     color: #bd469d;
     background: white;
     cursor: pointer;
@@ -54,6 +61,7 @@ form button:hover{
     list-style: none;
 }
 .todo{
+    border-radius: 15px;
     margin: 0.5rem;
     background: white;
     color: black;
@@ -69,10 +77,12 @@ form button:hover{
 }
 
 .trash-btn,.complete-btn{
+    
+    border-radius: 15px;
     background: #ff1900;
     color: white;
     border: none;
-    padding: 1rem;
+    padding: .8rem;
     cursor: pointer;
     font-size: 1rem;
 }
@@ -100,7 +110,8 @@ form button:hover{
 }
 /* Custom Select */
 .filter-todo{
-    padding: 1rem;
+    padding: .85rem;
+    border-radius: 15px;
 }
 .select {
     margin: 1rem;
@@ -117,14 +128,17 @@ form button:hover{
   }
   /* Arrow */
   .select::after {
+    border-end-end-radius: 15px;
+    border-top-right-radius: 15px;
     content: "\25BC";
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem;
+    padding: .85rem;
     background: #bd469d;
     cursor: pointer;
     pointer-events: none;
+    height: 1.3rem;
   }
   
   
